@@ -2,7 +2,7 @@ SameHeightElements
 ==================
 
 SameHeightElements is a tiny script that finds the height of a selected
-lements defined by the jQuery selector and applies the higer value to all
+elements defined by the jQuery selector and applies the highest value to all
 the elements. It works pretty well with Bootstrap columns.
 
 ***
