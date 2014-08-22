@@ -1,5 +1,5 @@
 /*
- * SameHeightElements.js v1.0.0
+ * SameHeightElements.js v1.1.0
  *
  * Author: Josep Viciana
  * Twitter: @emmgfx
@@ -13,17 +13,29 @@
  */
 
  (function($){
-    $.fn.sameHeightElements = function() {
+    $.fn.sameHeightElements = function(options) {
 
-    	var heights = this.map(function() {
-        	return $(this).height();
-        }).get(),
+        var settings = $.extend({
+            minWindowWidth: 0
+        }, options );
 
-    	maxHeight = Math.max.apply(null, heights);
+        var minWindowWidthReached = $(document).width() < settings.minWindowWidth;
 
-    	this.each(function() {
-            $(this).height(maxHeight);
+		this.each(function() {
+			$(this).height('auto');
         });
+
+        if(!minWindowWidthReached){
+        	var heights = this.map(function() {
+            	return $(this).height();
+            }).get();
+
+			maxHeight = Math.max.apply(null, heights);
+
+			this.each(function() {
+				$(this).height(maxHeight);
+	        });
+		}
 
     };
 })(jQuery);
