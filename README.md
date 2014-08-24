@@ -6,8 +6,12 @@ the elements. It works pretty well with Bootstrap columns.
 
 ***
 
+## Demo
+
+You can see the plugin working on http://jsfiddle.net/a7Lrtrdf/1/
+
 ## How to use
---------------
+
 ### Normal
 
 Add the the script to your HTML:
