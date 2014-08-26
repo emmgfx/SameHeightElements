@@ -42,4 +42,4 @@ Disable SameHeightElements if the window width is less than specified value.
 
 ## More info at
 
-Coming soon.
+http://www.emm-gfx.net/2014/08/jquery-plugin-sameheightelements/
